@@ -1,9 +1,10 @@
 # Play with modules
 
-import math
+from math import pi
 
 # import a module from another path
 from parent.child.child2.mymodule import add as plus
 
-print(plus(5, 10))
-math.ceil(5.5)
+sample_dict = {1: 'Coffee', 2: 'Tea', 3: 'Juice'}
+for x in sample_dict:
+    print(x)
