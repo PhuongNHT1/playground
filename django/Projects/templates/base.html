@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My ToDo App</title>
+    </head>
+    <body>
+        <header>
+            <h1>My ToDo App</h1>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'add_task' %}">Add Task</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer>
+            <p>Copyright {{ year }}</p>
+        </footer>
+    </body>
+</html>

@@ -1,2 +1,5 @@
 python/__pycache__/*.*
 python/test/__pycache__/*.*
+django/Projects/hello/__pycache__/*.*
+django/Projects/hello/migrations/__pycache__/*.*
+django/Projects/Projects/__pycache__/*.*

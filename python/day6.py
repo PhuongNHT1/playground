@@ -24,3 +24,11 @@ def lesser(numbers):
 
 small = list(map(lesser, numbers))
 print(small)
+
+list = [1, 2, 3, 4]
+
+list.insert(3, 5)
+print(list)
+
+list.extend(list)
+print(list)
