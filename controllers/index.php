@@ -25,7 +25,20 @@
 //     return (($book['year'] >= 1995) && ($book['year'] <= 2020));
 // });
 
-$heading = "Home";
-require "views/index.view.php"
+$heading = "My Shortcuts";
+require "Database.php";
+
+// $pid = $_GET['pid'];
+
+$config = (require("config.php"))['database'];
+$db = new Database($config);
+
+// $query = "select * from shortcuts where pid = :pid";
+// $statement = $db->query($query, [':pid' => $pid]);
+$query = "select * from shortcuts";
+$statement = $db->query($query);
+$shortcuts = $statement->fetchAll();
+
+require "views/index.view.php";
 
 ?>
